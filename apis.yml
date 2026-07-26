@@ -1,7 +1,24 @@
 aid: distil-networks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/distil-networks.png
 name: Distil Networks
-description: Distil Networks is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Distil Networks was a bot detection and mitigation company founded in 2011 and backed by
+  Techstars, providing automated-threat protection, web scraping defense, account-takeover prevention,
+  and API security that blocked malicious bots and credential stuffing across web, mobile, and API
+  surfaces. Distil Networks was acquired by Imperva in 2019 and its technology now lives on as Imperva
+  Advanced Bot Protection; the distilnetworks.com domain redirects to Imperva and there is no
+  independent Distil Networks developer surface or public API. This profile is retained in the API
+  Evangelist network as a historical company record.
 url: https://raw.githubusercontent.com/api-evangelist/distil-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Bot Detection
+- Bot Mitigation
+- Security
+- Web Security
+- Cybersecurity
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/distil-networks-domain-security.yml
 - type: Website
   url: https://distilnetworks.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
